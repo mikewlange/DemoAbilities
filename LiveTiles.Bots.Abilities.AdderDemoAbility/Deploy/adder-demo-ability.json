@@ -1,0 +1,52 @@
+{
+  "name": "Adder (Demo)",
+  "description": "Adds two numbers together and returns the result.",
+  "version": "0.0.1",
+  "endpoint": "{{endpoint}}",
+  "appId": "[APP ID]",
+  "isPublic": true,
+  "targets": [
+    "numbers"
+  ],
+  "allowMultiple": false,
+  "settings": [],
+  "actions": [
+    {
+      "key": "Add",
+      "name": "Add numbers",
+      "description": "Adds two selected numbers together, then responds with the sum.",
+      "keywords": [
+        "Add"
+      ],
+      "sentenceStructures": [
+        "{Keyword} {Target}"
+      ],
+      "parameters": [
+        {
+          "key": "firstNumber",
+          "type": 3,
+          "name": "First number",
+          "description": "First number to be added",
+          "required": true,
+          "label": "First number",
+          "prompt": "What is the first number to be added?",
+          "promptUser": true,
+          "examples": [],
+          "includeInLanguageModel": true
+        },
+        {
+          "key": "secondNumber",
+          "type": 3,
+          "name": "Second number",
+          "description": "Second number to be added",
+          "required": true,
+          "label": "Second number",
+          "prompt": "What is the second number to be added?",
+          "promptUser": true,
+          "examples": [],
+          "includeInLanguageModel": true
+        }
+      ]
+    }
+  ]
+} 
