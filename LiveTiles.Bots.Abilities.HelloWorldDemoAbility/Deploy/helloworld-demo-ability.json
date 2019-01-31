@@ -1,0 +1,27 @@
+{
+  "name": "Hello World (Demo)",
+  "description": "Produces a \"Hello World!\" message upon being triggered",
+  "version": "0.0.1",
+  "endpoint": "{{endpoint}}",
+  "appId": "[AAD CLIENT ID]",
+  "isPublic": true,
+  "targets": [
+    "world"
+  ],
+  "allowMultiple": false,
+  "settings": [],
+  "actions": [
+    {
+      "key": "Speak",
+      "name": "Say \"Hello world!\"",
+      "description": "Produces a simple message for demonstration purposes",
+      "keywords": [
+        "Hello"
+      ],
+      "sentenceStructures": [
+        "{Keyword} {Target}"
+      ],
+      "parameters": []
+    }
+  ]
+} 

@@ -1,0 +1,22 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  },
+  "AbilityConfiguration": {
+    "Authority": "https://login.microsoftonline.com/[AAD DIRECTORY ID]/oauth2/v2.0/token",
+    "ClientId": "[AAD CLIENT ID]",
+    "ClientSecret": "[AAD CLIENT SECRET]",
+    "Services": {
+      "MessagingService": {
+        "Scope": "api://[MESSAGING SERVICE CLIENT ID/.default",
+        "Url": "[MESSAGING SERVICE BASE URL"
+      },
+      "SettingsService": {
+        "Scope": "api://[BOT SERVICES CLIENT ID]/.default",
+        "Url": "[BOT SERVICES BASE URL]"
+      }
+    }
+  }
+}

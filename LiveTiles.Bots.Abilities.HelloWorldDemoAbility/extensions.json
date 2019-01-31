@@ -1,0 +1,8 @@
+﻿{
+  "extensions": [
+    {
+      "name": "Startup",
+      "typeName": "LiveTiles.Bots.Abilities.HelloWorldDemoAbility.Startup, LiveTiles.Bots.Abilities.HelloWorldDemoAbility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ]
+}
