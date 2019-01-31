@@ -119,6 +119,4 @@ Messages can be posted to the user using the `PostMessage` method and supplying 
 PostMessage(ConversationContext context, string message, IEnumerable<MessageAttachment> attachment, CancellationToken token);
 ```
 
-Note that `attachment` may be left as `null` if no attachments beyond the text message are necessary.
-
-As noted above, it is recommended to store your strings in /Strings/Vocabulary.resx (or another resource file).
+Note that `attachment` may be left as `null` if no attachments beyond the text message are necessary
