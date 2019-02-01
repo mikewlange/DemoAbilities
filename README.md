@@ -120,3 +120,32 @@ PostMessage(ConversationContext context, string message, IEnumerable<MessageAtta
 ```
 
 Note that `attachment` may be left as `null` if no attachments beyond the text message are necessary
+
+# Troubleshooting & Debugging
+### ngrok
+ngrok allows you to test a local server via an externally accessible URL, giving you the ability to easily view requests and responses in order to debug more efficiently.
+
+To install ngrok:
+1. Visit https://ngrok.com/download and download the tool
+2. Run your Azure Function App locally via Visual Studio
+3. Run `./ngrok http 7071` (or whichever port the process is using)
+4. Copy the ngrok-supplied forwarding URL (http://xxxxxxxx.ngrok.io) and append `/api/abilities`
+5. Replace the registered ability endpoint in the DB with the new URL
+6. Navigate to the web interface URL supplied by ngrok and begin testing
+7. After testing and publishing to your Azure subscription, remember to switch the ability endpoint back to the original one
+
+### 500 Errors
+If you're seeing 500 errors, double-check that settings.json exists in the bin directory (under either Debug or Release, depending on your Azure publish settings, then under netcoreapp2.1/Configuration)
+
+### 200 Errors
+Ensure host.json in your project's root directory includes the appropriate HTTP route prefix, for example:
+```json
+{
+  "version": "2.0",
+  "extensions": {
+    "http": {
+      "routePrefix": "api/abilities"
+    }
+  }
+}
+```
