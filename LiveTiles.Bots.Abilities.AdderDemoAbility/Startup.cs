@@ -28,7 +28,6 @@ namespace LiveTiles.Bots.Abilities.AdderDemoAbility
             Configuration = app
                 .SetBasePath(Environment.GetEnvironmentVariable("AzureWebJobsScriptRoot") + "\\Configuration")
                 .AddJsonFile("settings.json", true, true)
-                .AddJsonFile("local.settings.json", true, true)
                 .AddEnvironmentVariables()
                 .Build();
 

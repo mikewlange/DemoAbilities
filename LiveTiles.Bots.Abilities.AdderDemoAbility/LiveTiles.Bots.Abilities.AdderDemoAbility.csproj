@@ -1,16 +1,108 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <LangVersion>7.1</LangVersion>
-    <ApplicationIcon />
-    <OutputType>Library</OutputType>
-    <StartupObject />
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.1\bin\extensions.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\Configuration\local.settings.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\ExecuteAction\function.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\host.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\LiveTiles.Bots.Abilities.AdderDemoAbility.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\ReceivePromptResponse\function.json" />
+    <Content Include="bin\Release\netcoreapp2.1\bin\extensions.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.1\bin\LiveTiles.BotAbilitySettingsClient.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\LiveTiles.BotMessagingClient.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\LiveTiles.Bots.Abilities.AdderDemoAbility.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\LiveTiles.Bots.Abilities.AdderDemoAbility.pdb" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\LiveTiles.Bots.Abilities.AzureFunctions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\LiveTiles.Bots.Abilities.Sdk.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Authentication.Core.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Authorization.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Authorization.Policy.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Http.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Http.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Http.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Http.Features.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.JsonPatch.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Mvc.Core.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Mvc.WebApiCompatShim.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Routing.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.Routing.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.AspNetCore.WebUtilities.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Azure.WebJobs.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Azure.WebJobs.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Azure.WebJobs.Extensions.Http.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Azure.WebJobs.Host.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Azure.WebJobs.Host.Storage.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Build.Framework.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Build.Utilities.Core.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Configuration.Json.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Hosting.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Hosting.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Http.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Logging.Configuration.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.ObjectPool.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Net.Http.Headers.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.Rest.ClientRuntime.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Microsoft.WindowsAzure.Storage.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\NCrontab.Signed.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\runtimes\unix\lib\netstandard1.3\System.Text.Encoding.CodePages.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\runtimes\win\lib\netstandard1.3\System.Text.Encoding.CodePages.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\System.Net.Http.Formatting.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\bin\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\Configuration\settings.json" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LiveTiles.BotAbilityAzureFunctions" Version="1.0.0-build.4599" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Compile Update="Strings\Vocabulary.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Vocabulary.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Strings\Vocabulary.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Vocabulary.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

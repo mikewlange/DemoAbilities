@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveTiles.Bots.Abilities.HelloWorldDemoAbility", "LiveTiles.Bots.Abilities.HelloWorldDemoAbility\LiveTiles.Bots.Abilities.HelloWorldDemoAbility.csproj", "{81B52FD7-40E7-47D0-900A-90F316AFF5BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveTiles.Bots.Abilities.AdderDemoAbility", "LiveTiles.Bots.Abilities.AdderDemoAbility\LiveTiles.Bots.Abilities.AdderDemoAbility.csproj", "{715DBC7B-95EF-4B6F-AC62-3A3F1B1DF9F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveTiles.Bots.Abilities.AdderDemoAbilityOld", "LiveTiles.Bots.Abilities.AdderDemoAbility\LiveTiles.Bots.Abilities.AdderDemoAbilityOld.csproj", "{715DBC7B-95EF-4B6F-AC62-3A3F1B1DF9F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveTiles.Bots.Abilities.AdderDemoAbility", "LiveTiles.Bots.Abilities.AdderDemoAbility\LiveTiles.Bots.Abilities.AdderDemoAbility.csproj", "{69016F01-3D04-4B31-A8DB-5582D3F01833}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{715DBC7B-95EF-4B6F-AC62-3A3F1B1DF9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{715DBC7B-95EF-4B6F-AC62-3A3F1B1DF9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{715DBC7B-95EF-4B6F-AC62-3A3F1B1DF9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69016F01-3D04-4B31-A8DB-5582D3F01833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69016F01-3D04-4B31-A8DB-5582D3F01833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69016F01-3D04-4B31-A8DB-5582D3F01833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69016F01-3D04-4B31-A8DB-5582D3F01833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

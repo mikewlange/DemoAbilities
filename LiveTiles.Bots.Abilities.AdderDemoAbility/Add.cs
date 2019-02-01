@@ -28,12 +28,11 @@ namespace LiveTiles.Bots.Abilities.AdderDemoAbility
         public async Task Invoke(ConversationContext context, string message, IDictionary<string, IList<Entity>> parameters, Credentials credentials, CancellationToken token)
         {
             var settings = await _settingsService.GetSettings(context.AbilityInstanceId);
-            
-            var firstAddend = Convert.ToInt32(parameters.GetEntityValue<double>(FirstNumberParameterKey));
-            var secondAddend = Convert.ToInt32(parameters.GetEntityValue<double>(SecondNumberParameterKey));
-            var result = firstAddend - secondAddend;
+            var firstAddend = Convert.ToInt64(parameters.GetEntityValue<double>(FirstNumberParameterKey));
+            var secondAddend = Convert.ToInt64(parameters.GetEntityValue<double>(SecondNumberParameterKey));
+            var result = firstAddend + secondAddend;
 
-            await _messagingService.PostMessage(context, "The result is: " + Convert.ToString(result), null, token);
+            await _messagingService.PostMessage(context, Strings.Vocabulary.Response_message + Convert.ToString(result), null, token);
 
             await _messagingService.PostDone(context, token);
         }

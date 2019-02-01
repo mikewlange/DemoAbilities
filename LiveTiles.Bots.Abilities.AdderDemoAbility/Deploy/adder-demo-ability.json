@@ -3,7 +3,7 @@
   "description": "Adds two numbers together and returns the result.",
   "version": "0.0.1",
   "endpoint": "{{endpoint}}",
-  "appId": "[APP ID]",
+  "appId": "[AAD CLIENT ID]",
   "isPublic": true,
   "targets": [
     "numbers"
